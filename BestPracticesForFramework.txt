@@ -1,0 +1,18 @@
+Best practices for creating a framework from scratch :
+---------------------------------------------------------
+(i) Create dependency management project like Maven
+(ii) Add all the required dependencies in the maven's pom.xml
+(iii) The testing framework should have well defined packages like, 
+	Pages - where page classes reside
+	Test - where test reside
+	Utilities -  Where classes containing utility methods reside
+(iv) Each page should have a seperate Page class and a corresponding Test class.
+(v) The test data should not be hard coded in the test methods. Instead they should be maintained in a seperate file like excel or congig files.
+(vi) We can create a seperate Object repository for the WebElements used throughout the application.
+(vii) The Base class that instantiates the driver, utility classes, Page classes, test data files, config files should be under src/main/java
+(viii) The Test class should under src/test/java
+(ix) All the reusable parts of the code should be placed in the Utility class.
+(x) We can have a seperate folder to save the generated reports.
+(xi) Good naming conventions should be used for the variables, methods, classes and packages.
+(xii) Use appropriate Design patterns and principles to design the framework.
+(xiii) We can have seperate folder in our project to save our failed test case's screenshots.
